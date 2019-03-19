@@ -1,0 +1,58 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:layout_height="75dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <ImageView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/imgView"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout android:layout_width="0dp"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                    android:text="filename"
+                    android:gravity="center"
+                    android:id="@+id/txtfname"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"/>
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="file size"
+                    android:id="@+id/txtfsize"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <ImageView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/imgdelete"
+                android:padding="10dp"
+                android:src="@drawable/delete"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
